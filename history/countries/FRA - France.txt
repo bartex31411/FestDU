@@ -62,9 +62,6 @@ set_variable = { FRA_ww_army = 0 } # weekly
 set_variable = { FRA_cap_limit = -0.5 }
 set_variable = { FRA_pop_growth = 0.1 }
 
-add_dynamic_modifier = { modifier = FRA_economy }
-add_dynamic_modifier = { modifier = FRA_violence }
-add_dynamic_modifier = { modifier = FRA_Army }
 
 # Starting tech
 set_technology = { basic_train = 1
