@@ -6,14 +6,10 @@ history={
 	1936.1.1.16 = {
 			owner = SWE 
 		}
-		owner = CHI
+#		owner = CHI
 		add_core_of = SWE
 		add_core_of = CHI
 		add_core_of = SWE
-		buildings = {
-			infrastructure = 1
-
-		}
 		1938.10.25 = {
 			if = {
 				limit = {
@@ -36,7 +32,7 @@ history={
 	provinces={
 		3742 5031 5057 5100 7511 8055 8081 8127 10724 12327 12750 12776 
 	}
-	manpower=2077600
+	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	impassable = yes
