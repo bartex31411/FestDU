@@ -191,208 +191,6 @@ focus_tree = {
 		add_ideas =	GER_A_Nation_Designed_To_Conquer
 		}
 	}
-	focus = {
-		id = GER_Goring5
-		icon = GFX_focus_SWI_abandon_neutrality
-		prerequisite = { focus = GER_fall_gelb }
-		relative_position_id = GER_fall_gelb
-		available = {
-			has_completed_focus = GER_four_year_plan
-			date>1943.4.1
-		}
-		x = 2
-		y = 2
-		cost = 5
-		ai_will_do = {
-			factor = 12
-		}
-		
-		available = { FRA = { has_capitulated = yes } }
-		
-		completion_reward = {
-			SWI = {
-				SWI = {
-				division_template = {
-					name = "Strelkoviy Batal'on"
-					priority = 0
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 0 y = 4 }
-
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 1 y = 4 }
-
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 2 y = 3 }
-						anti_air_brigade = { x = 2 y = 4 }
-
-						artillery_brigade = { x = 3 y = 0}
-						anti_tank_brigade = { x = 3 y = 1}
-						artillery_brigade = { x = 3 y = 2}
-						artillery_brigade = { x = 3 y = 3}
-					}
-					support = {
-						engineer_company = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
-						logistics_company  = { x = 0 y = 2 }
-					}
-				}
-				every_state = {
-					limit = {	
-						AND = {
-							is_controlled_by = SWI
-						}
-					}
-					create_unit = {
-						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
-						owner = SWI
-					}
-					create_unit = {
-						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
-						owner = SWI
-					}
-					create_unit = {
-						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
-						owner = SWI
-					}
-					create_unit = {
-						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
-						owner = SWI
-					}
-					create_unit = {
-						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
-						owner = SWI
-					}
-					create_unit = {
-						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
-						owner = SWI
-					}
-				}
-		}
-			}
-		every_country = {
-			limit = {
-				OR = {
-					is_in_faction_with = GER
-					tag = GER
-				}
-			}
-			declare_war_on = {
-				target = SWI
-				type = annex_everything
-			}
-		}
-		
-		ENG = {
-			add_to_faction = SWI
-		}
-		
-		}
-	
-	}
-	
-	focus = {
-		id = GER_seized_gold
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		prerequisite = { focus = GER_fall_gelb }
-		text = "Seize Swiss Gold"
-		x = 3
-		y = 1
-		relative_position_id = GER_fall_gelb
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			SWI = { has_capitulated = yes }
-		}
-		
-		bypass = {
-
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			GER_economy_up = yes	
-			every_state = {
-				limit = {
-					is_core_of = SWI
-				}
-				add_compliance = 60
-			}
-		
-			845 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		
-
-
-			3 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			151 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		
-			845 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			3 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-			151 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}		
-		}
-	}
-	
 	
 	focus = {
 		id = GER_autarky
@@ -464,10 +262,10 @@ focus_tree = {
 		completion_reward = {
 			GER_economy_down = yes
 			52 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -491,10 +289,10 @@ focus_tree = {
 		completion_reward = {
 			GER_economy_down = yes
 			53 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 6	
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -2009,28 +1807,6 @@ CZE = {
 		}
 	}
 	
-	focus = {
-		id = GER_Bomb_Britain
-		icon = GFX_focus_fra_regiment_normandie
-		prerequisite = { focus = GER_weserubung }
-		will_lead_to_war_with = DEN 
-		will_lead_to_war_with = NOR
-		text = "The Battle of Britain"
-		available = {
-			has_war_with = ENG
-		}
-		
-		x = 0
-		y = 2
-		relative_position_id = GER_weserubung
-		cost = 1
-		ai_will_do = {
-			factor = 1000
-		}	
-		completion_reward = {
-			add_timed_idea = { idea = GER_Battle_of_Britain days = 90 }
-		}
-	}
 	
 	focus = {
 		id = GER_pressure_sweden
@@ -2311,31 +2087,6 @@ CZE = {
 		}
 	}
 	
-	focus = {
-		id = GER_battle_of_the_Atlantic
-		icon = GFX_focus_attack_britain
-		prerequisite = { focus = GER_plan_z }
-		x = 0
-		y = 3
-		relative_position_id = GER_plan_z
-		cost = 1
-		text = "Battle of the Atlantic"
-		ai_will_do = {
-			factor = 0.25
-		}	
-		
-		available = {
-			has_war_with = ENG
-		}
-		
-		available_if_capitulated = yes
-
-		
-
-		completion_reward = {
-			add_timed_idea = { idea = GER_Battle_of_the_Atlantic days = 90 }
-		}
-	}
 	
 	focus = {
 		id = GER_Carrier_Effort
@@ -4041,26 +3792,7 @@ CZE = {
 		}
 	}
 	
-	focus = {
-		id = GER_Recruit_The_SS
-		icon = GFX_focus_SWE_neither_death_nor_dishonor
-		prerequisite = { focus = GER_fall_gelb }
-		relative_position_id = GER_fall_gelb
-		x = 1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-			load_oob = "Waffen"
-		}
-	}
-
+	
 			focus = {
 				id = GER_armament_miracle
 				icon = GFX_goal_generic_arms_artillery_grenades
@@ -4969,37 +4701,7 @@ CZE = {
 					add_ideas = GER_Endsieg_3
 					}
 				}
-		focus = {
-			id = GER_establish_the_Einheitspakt
-			icon = GFX_focus_NORDIC_com_capstone_civilian
-			prerequisite = { focus = GER_align_hungary }
-			relative_position_id = GER_align_hungary
-			mutually_exclusive = {focus =GER_integrate_war_economies}
-			x = -1
-			y = 1
-			cost = 5
-			ai_will_do = {
-				factor = 12
-			}
-			
-			
-			
-			completion_reward = {
-				add_ideas = GER_Einheitspakt_Member
-				every_country = {
-							
-							limit = {
-								is_in_faction_with = GER
-							}
-							add_ideas = GER_Einheitspakt_Member
-						}
-				CZE = {
-					add_ideas = GER_Einheitspakt_Member
-				}
-				
-			}
-		}
-	 		
+		
 	GER_westwall = {
 
 		icon = generic_construction
