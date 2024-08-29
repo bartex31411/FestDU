@@ -36,9 +36,7 @@ replace_path="common/units/equipment/upgrades"
 replace_path="common/units"
 replace_path="common/ai_strategy" 
 replace_path="common/military_industrial_organization"
-<<<<<<< HEAD
 path="C:/Users/HARDPC/Documents/Paradox Interactive/Hearts of Iron IV/mod/FestDU"
-=======
-#test31231
+
+#test31231313
 path="C:/Users/HARDPC/Documents/Paradox Interactive/Hearts of Iron IV/mod/FestDU"
->>>>>>> a64510869d0757fcf772c3ca8ff3dd33334a83fc
