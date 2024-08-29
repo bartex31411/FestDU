@@ -103,7 +103,7 @@ ideas = {
 			}
 			modifier = {
 				production_speed_arms_factory_factor = -1
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = 0.2
 			}
 		}
 		FRA_Military_Complex = {
@@ -115,7 +115,7 @@ ideas = {
 				has_government = democratic
 			}
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
 				production_speed_industrial_complex_factor = -1
 			}
 		}

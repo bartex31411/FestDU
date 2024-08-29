@@ -114,7 +114,8 @@
 				}
 			}
 			add_ideas = FRA_pierre_pucheu
-			add_ideas = FRA_Military_Complex 
+			add_timed_idea = { idea = FRA_Military_Complex days = 720 }
+			
 		}
 	}	
 	focus = {
