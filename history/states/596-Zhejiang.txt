@@ -38,6 +38,7 @@ state=
 				coastal_bunker = 1
 				bunker = 1
 			}
+			arms_factory = 6
 		}
 
 		1938.10.25 = {		
