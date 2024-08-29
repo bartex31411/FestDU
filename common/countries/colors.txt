@@ -151,8 +151,8 @@ BUL = {
 	color_ui = rgb { 210 147 217 }
 }
 HUN = {
-	color = rgb { 152  85  92 }
-	color_ui = rgb { 152  85  92 }
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
 }
 
 AST = {
