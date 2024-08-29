@@ -92,8 +92,8 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 36 132 247 }
-	color_ui = rgb { 47 172 255  }
+	color = rgb { 11 7 126 }
+	color_ui = rgb { 11 7 126 }
 }
 BEL = { color 	 = rgb { 193 171 8  }
 		color_ui = rgb { 251 222 10 }
