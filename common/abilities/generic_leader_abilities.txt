@@ -6,7 +6,7 @@ ability = {
 	# 	sound_effect = command_power_ability_offensive
 				
 	# 	type = army_leader
-		
+	#	
 	# 	allowed = {
 	# 		is_leading_army_group = no
 	# 		is_border_war = no
