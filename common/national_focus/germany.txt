@@ -1456,14 +1456,16 @@ focus_tree = {
 				transfer_state = 76
 			}
 			76 = {
-				add_manpower = -1500000
+				add_manpower = -2500000
 			}
 			46 = {
-				add_manpower = 1523069
+				add_manpower = 3223069
 			}
 			GER = { 
 				transfer_state = 9
 				transfer_state = 75
+				transfer_state = 70
+				transfer_state = 74
 			}
 			  if = {
 				limit = {
