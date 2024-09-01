@@ -4,27 +4,6 @@ state={
 	name="STATE_817"
 
 	history={
-		owner = MON
-		1936.1.1.15 = {
-			owner = SOV 
-		}
-		1936.1.1.13 = {
-			owner = SOV
-			add_core_of = SOV
-
-		}
-		1936.1.1.16 = {
-			owner = MON
-
-		}
-		buildings = {
-			infrastructure = 1
-
-		}
-		victory_points = {
-			12612 1 
-		}
-		add_core_of = MON
 
 	}
 
